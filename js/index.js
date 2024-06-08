@@ -1,3 +1,5 @@
+
+// font change functions (bold,italic,underline)
 document.getElementById('bold').addEventListener('click',function(){
     let text = getTextArea();
     if(text.style.fontWeight ==='bold'){
@@ -31,6 +33,8 @@ document.getElementById('underline').addEventListener('click',function(){
         enable('underline');
     } 
 })
+
+// text align functions (left,right,center,justify)
 document.getElementById('left').addEventListener('click',function(){
     let text = getTextArea();
     if(text.style.textAlign ==='left'){
@@ -64,6 +68,7 @@ document.getElementById('center').addEventListener('click',function(){
         enable('center');
     } 
 })
+
 document.getElementById('justify').addEventListener('click',function(){
     let text = getTextArea();
     if(text.style.textAlign ==='justify'){
@@ -76,12 +81,15 @@ document.getElementById('justify').addEventListener('click',function(){
     } 
 })
 
+// font size change function
 document.getElementById('input-nmbr').addEventListener('change',function(){
     const text = getTextArea();
     const input = getInput('input-nmbr');
     text.style.fontSize = input + 'px';
 })
 
+
+// text uppercase function
 document.getElementById('uppercase').addEventListener('click',function(){
     let text = getTextArea();
     if(text.style.textTransform ==='uppercase'){
@@ -95,6 +103,7 @@ document.getElementById('uppercase').addEventListener('click',function(){
 })
 
 
+// text color change function
 document.getElementById('input-clr').addEventListener('change',function(){
     const text = getTextArea();
     const input = getInput('input-clr');
