@@ -53,5 +53,16 @@ document.getElementById('right').addEventListener('click',function(){
         enable('right');
     } 
 })
+document.getElementById('center').addEventListener('click',function(){
+    let text = getTextArea();
+    if(text.style.textAlign ==='center'){
+        text.style.textAlign = 'left';
+        disable('center');
+    }
+    else{
+        text.style.textAlign = 'center';
+        enable('center');
+    } 
+})
 
 
