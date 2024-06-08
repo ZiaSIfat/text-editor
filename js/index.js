@@ -95,3 +95,9 @@ document.getElementById('uppercase').addEventListener('click',function(){
 })
 
 
+document.getElementById('input-clr').addEventListener('change',function(){
+    const text = getTextArea();
+    const input = getInput('input-clr');
+    text.style.color = input;
+})
+
