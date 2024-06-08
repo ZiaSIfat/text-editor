@@ -64,5 +64,16 @@ document.getElementById('center').addEventListener('click',function(){
         enable('center');
     } 
 })
+document.getElementById('justify').addEventListener('click',function(){
+    let text = getTextArea();
+    if(text.style.textAlign ==='justify'){
+        text.style.textAlign = 'left';
+        disable('justify');
+    }
+    else{
+        text.style.textAlign = 'justify';
+        enable('justify');
+    } 
+})
 
 
