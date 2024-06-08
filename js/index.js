@@ -31,5 +31,16 @@ document.getElementById('underline').addEventListener('click',function(){
         enable('underline');
     } 
 })
+document.getElementById('left').addEventListener('click',function(){
+    let text = getTextArea();
+    if(text.style.textAlign ==='left'){
+        text.style.textAlign = 'left';
+        disable('left');
+    }
+    else{
+        text.style.textAlign = 'left';
+        enable('left');
+    } 
+})
 
 
