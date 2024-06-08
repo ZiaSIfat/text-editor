@@ -42,5 +42,16 @@ document.getElementById('left').addEventListener('click',function(){
         enable('left');
     } 
 })
+document.getElementById('right').addEventListener('click',function(){
+    let text = getTextArea();
+    if(text.style.textAlign ==='right'){
+        text.style.textAlign = 'left';
+        disable('right');
+    }
+    else{
+        text.style.textAlign = 'right';
+        enable('right');
+    } 
+})
 
 
