@@ -82,6 +82,16 @@ document.getElementById('input-nmbr').addEventListener('change',function(){
     text.style.fontSize = input + 'px';
 })
 
-
+document.getElementById('uppercase').addEventListener('click',function(){
+    let text = getTextArea();
+    if(text.style.textTransform ==='uppercase'){
+        text.style.textTransform = 'lowercase';
+        disable('uppercase');
+    }
+    else{
+        text.style.textTransform = 'uppercase';
+        enable('uppercase');
+    } 
+})
 
 
