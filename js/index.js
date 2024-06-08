@@ -76,4 +76,12 @@ document.getElementById('justify').addEventListener('click',function(){
     } 
 })
 
+document.getElementById('input-nmbr').addEventListener('change',function(){
+    const text = getTextArea();
+    const input = getInput('input-nmbr');
+    text.style.fontSize = input + 'px';
+})
+
+
+
 
